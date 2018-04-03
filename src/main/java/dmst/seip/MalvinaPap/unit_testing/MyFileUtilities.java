@@ -26,18 +26,24 @@ public class MyFileUtilities {
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
+	
+	
+	
 	public int[] readFile(String Filepath) throws IOException, FileNotFoundException {
 		
 		List<Integer> grades = new ArrayList<Integer>();
-		String strLine;
+		
 		try {
+			String strLine;
 			FileInputStream fstream = new FileInputStream(Filepath);
 			BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+			
 			while ((strLine = br.readLine()) != null)   {
 				int grade = Integer.parseInt(strLine);
 				grades.add(grade);
 		    }		
 			br.close();
+			fstream.close();
 			
 		} catch (Exception e) {
 			throw new IllegalArgumentException("Error while reading the file.");

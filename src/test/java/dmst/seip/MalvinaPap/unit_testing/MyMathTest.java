@@ -5,8 +5,7 @@ import org.junit.Assert;
 
 /**
  * An class that provides test cases for the 
- * "simple" math operations of the MyMath 
- * class, for demonstrating Unit Testing.
+ * math operations of the MyMath class
  * @author Malvina
  */
 public class MyMathTest {
