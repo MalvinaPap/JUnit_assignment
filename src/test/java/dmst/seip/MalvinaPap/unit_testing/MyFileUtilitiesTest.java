@@ -30,26 +30,13 @@ public class MyFileUtilitiesTest {
 			int[] expected_grades1 = new int[]{4,6,7,5,7,6,9,10,10,5,6,7,7,7,8,9,5,8,9,8,8,9,6};
 			int[] actual_grades1 = futil.readFile("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources\\grades1.txt");
 			
-			/*check if expected array legth matches actual one*/
-			Assert.assertEquals(expected_grades1.length,actual_grades1.length);
-			
-			/*check contents one by one*/
-			for (int i=0;i< expected_grades1.length; ++i) {
-				Assert.assertEquals(expected_grades1[i],actual_grades1[i]);
-			}
-			
+			Assert.assertArrayEquals(expected_grades1,actual_grades1);
 			
 			/*2nd file*/
 			int[] expected_grades2 = new int[]{1,2,3,4,5,6,7,8,9,10};
 			int[] actual_grades2 = futil.readFile("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources\\grades2.txt");
 			
-			/*check if expected array legth matches actual one*/
-			Assert.assertEquals(expected_grades2.length,actual_grades2.length);
-			
-			/*check contents one by one*/
-			for (int i=0;i< expected_grades2.length; ++i) {
-				Assert.assertEquals(expected_grades2[i],actual_grades2[i]);
-			}
+			Assert.assertArrayEquals(expected_grades2,actual_grades2);
 			
 			
     } 
