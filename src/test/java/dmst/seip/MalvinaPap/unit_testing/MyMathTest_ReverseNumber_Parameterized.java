@@ -28,7 +28,6 @@ public class MyMathTest_ReverseNumber_Parameterized {
 	 
 	 MyMath mm = new MyMath();
 	 
-	 
 	 @Parameters
 	 public static Collection<Object[]> data() { 
 		 Object[][] data = new Object[][] 
