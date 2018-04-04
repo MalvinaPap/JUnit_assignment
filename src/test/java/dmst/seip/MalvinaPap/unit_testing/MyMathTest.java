@@ -19,6 +19,15 @@ public class MyMathTest {
     public void testDivideShouldCauseException () {
     	mm.divide(10,0);
     } 
+	
+	/*
+	 * unit test that checks a simple division
+	 * when numerator is zero
+	 */
+	 @Test
+	 public void testDivideShouldReturnZero() {
+	   Assert.assertEquals(0, mm.divide(0,2),0.5);
+	  }
 	 
 	/*
 	 * unit test that checks a simple division
