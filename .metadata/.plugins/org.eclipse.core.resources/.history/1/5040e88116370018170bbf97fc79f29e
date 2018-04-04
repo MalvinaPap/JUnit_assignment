@@ -1,0 +1,16 @@
+package dmst.seip.MalvinaPap.unit_testing;
+
+import junit.framework.TestCase;
+
+/**
+ * An class that provides test cases for the 
+ * "simple" math operations of the MyMath 
+ * class, for demonstrating Unit Testing.
+ * @author Malvina
+ */
+public class MyMathTest extends TestCase {
+	
+	MyMath mm = new MyMath(); /*create MyMath Object for the tests*/
+	
+	
+}

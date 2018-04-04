@@ -1,0 +1,43 @@
+package dmst.seip.MalvinaPap.unit_testing;
+
+import java.io.FileInputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author Malvina
+ *
+ */
+public class MyFileUtilities {
+
+	public int[] readFile(String Filepath) {
+		
+		try {
+			ArrayList<Integer> grades = new ArrayList<Integer>();
+			String strLine;
+			
+			FileInputStream fstream = new FileInputStream(Filepath);
+			BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+			while ((strLine = br.readLine()) != null)   {
+				int grade = Integer.parseInt(strLine);
+				grades.add(grade);
+		    }		
+			br.close();
+			
+			int[] gds = new int[grades.size()];
+			for (int i=0; i < gds.length; i++)  {
+		        gds[i] = grades.get(i);
+		    }
+			return gds;
+			
+		} catch (FileNotFoundException e) {
+			
+		}
+	}
+		
+		
+}

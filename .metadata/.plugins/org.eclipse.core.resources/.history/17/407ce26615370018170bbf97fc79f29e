@@ -1,0 +1,15 @@
+package dmst.seip.MalvinaPap.unit_testing;
+
+import java.lang.IllegalArgumentException;
+
+public class MyMath {
+
+	double divide(int num, int denom) {
+		if (denom==0) {
+			throw new IllegalArgumentException("'denominator' cannot be zero");
+		}
+		double result = num/denom;
+		return result;
+	}
+	
+}
