@@ -21,9 +21,9 @@ import org.junit.runners.Parameterized.Parameters;
 public class MyMathTest_ReverseNumber_Parameterized {
 	
 	 
-	 @Parameter 
+	 @Parameter (value=0)
 	 public int result;
-	 @Parameter 
+	 @Parameter (value=0)
 	 public int input;
 	 
 	 MyMath mm = new MyMath();
