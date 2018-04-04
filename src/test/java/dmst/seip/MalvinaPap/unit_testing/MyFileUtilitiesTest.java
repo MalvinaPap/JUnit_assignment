@@ -38,6 +38,12 @@ public class MyFileUtilitiesTest {
 			
 			Assert.assertArrayEquals(expected_grades2,actual_grades2);
 			
+			/*3rd file (empty file)*/
+			int[] expected_grades4 = new int[]{};
+			int[] actual_grades4 = futil.readFile("./src/test/resources/grades4.txt");
+			
+			Assert.assertArrayEquals(expected_grades4,actual_grades4);
+			
 			
     } 
 	
