@@ -28,13 +28,13 @@ public class MyFileUtilitiesTest {
 			
 			/*1st file*/
 			int[] expected_grades1 = new int[]{4,6,7,5,7,6,9,10,10,5,6,7,7,7,8,9,5,8,9,8,8,9,6};
-			int[] actual_grades1 = futil.readFile("grades1.txt");
+			int[] actual_grades1 = futil.readFile("./src/test/resources/grades1.txt");
 			
 			Assert.assertArrayEquals(expected_grades1,actual_grades1);
 			
 			/*2nd file*/
 			int[] expected_grades2 = new int[]{1,2,3,4,5,6,7,8,9,10};
-			int[] actual_grades2 = futil.readFile("grades2.txt");
+			int[] actual_grades2 = futil.readFile("./src/test/resources/grades2.txt");
 			
 			Assert.assertArrayEquals(expected_grades2,actual_grades2);
 			
