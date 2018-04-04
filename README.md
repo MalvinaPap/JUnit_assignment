@@ -11,3 +11,5 @@ The project contains 3 classes:
 MyMath class contains two methods.The first one performs a division between two given numbers.The second one reverses the digit of a given number.
 MyFileUtilities class contains a method that reads a file with grades and returns them in array format.
 MyArrayOperations class contains a method that reads a file with grades and returns an array with their frequencies.
+
+All 3 classes are covered by the corresponding JUnit tests
