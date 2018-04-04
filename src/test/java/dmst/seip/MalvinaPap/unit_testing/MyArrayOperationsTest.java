@@ -36,15 +36,15 @@ public class MyArrayOperationsTest {
 		int[] gd3 = new int[]{8,8,8,8,7,7};
 		
 		// Pre-define the results of the readFile calls
-		when(utils.readFile("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades1.txt")).thenReturn(gd1);
-		when(utils.readFile("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades2.txt")).thenReturn(gd2);
-		when(utils.readFile("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades3.txt")).thenReturn(gd3);
+		when(utils.readFile("grades1.txt")).thenReturn(gd1);
+		when(utils.readFile("grades2.txt")).thenReturn(gd2);
+		when(utils.readFile("grades3.txt")).thenReturn(gd3);
 		
 		Assert.assertArrayEquals(new int[]{0,0,0,0,1,3,4,5,4,4,2},opers.gradeFrequencies
-				("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades1.txt",utils));
+				("grades1.txt",utils));
 		Assert.assertArrayEquals(new int[]{0,1,1,1,1,1,1,1,1,1,1},opers.gradeFrequencies
-				("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades2.txt",utils));
+				("grades2.txt",utils));
 		Assert.assertArrayEquals(new int[]{0,0,0,0,0,0,0,2,4,0,0},opers.gradeFrequencies
-				("C:\\Users\\admin\\Desktop\\JUnit_assignment\\src\\test\\resources.grades3.txt",utils));
+				("grades3.txt",utils));
 	}
 }
