@@ -1,7 +1,0 @@
-package dmst.seip.MalvinaPap.unit_testing;
-
-import junit.framework.TestCase;
-
-public class MyMathTest extends TestCase {
-
-}
