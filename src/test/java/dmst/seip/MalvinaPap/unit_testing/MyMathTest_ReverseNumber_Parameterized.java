@@ -23,7 +23,7 @@ public class MyMathTest_ReverseNumber_Parameterized {
 	 
 	 @Parameter (value=0)
 	 public int result;
-	 @Parameter (value=0)
+	 @Parameter (value=1)
 	 public int input;
 	 
 	 MyMath mm = new MyMath();
